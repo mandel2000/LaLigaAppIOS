@@ -13,9 +13,11 @@
 		83A9090A2BE29FB30068CF80 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 83A909092BE29FB30068CF80 /* Base */; };
 		83A9090C2BE29FB60068CF80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83A9090B2BE29FB60068CF80 /* Assets.xcassets */; };
 		83A9090F2BE29FB60068CF80 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 83A9090E2BE29FB60068CF80 /* Base */; };
-		83A9091A2BE29FB60068CF80 /* LaLigaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A909192BE29FB60068CF80 /* LaLigaAppTests.swift */; };
-		83A909242BE29FB60068CF80 /* LaLigaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A909232BE29FB60068CF80 /* LaLigaAppUITests.swift */; };
-		83A909262BE29FB60068CF80 /* LaLigaAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A909252BE29FB60068CF80 /* LaLigaAppUITestsLaunchTests.swift */; };
+		83ECDAF82BE4116400F5C0F2 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ECDAF72BE4116400F5C0F2 /* Team.swift */; };
+		83ECDAFB2BE4162600F5C0F2 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ECDAFA2BE4162600F5C0F2 /* ApiClient.swift */; };
+		83ECDAFF2BE54CD900F5C0F2 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ECDAFE2BE54CD900F5C0F2 /* TeamViewController.swift */; };
+		83ECDB012BE5509800F5C0F2 /* FixturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ECDB002BE5509800F5C0F2 /* FixturesViewController.swift */; };
+		83ECDB042BE550BA00F5C0F2 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ECDB032BE550BA00F5C0F2 /* FavoritesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +47,12 @@
 		83A9090E2BE29FB60068CF80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83A909102BE29FB60068CF80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83A909152BE29FB60068CF80 /* LaLigaAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaLigaAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		83A909192BE29FB60068CF80 /* LaLigaAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaLigaAppTests.swift; sourceTree = "<group>"; };
 		83A9091F2BE29FB60068CF80 /* LaLigaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaLigaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		83A909232BE29FB60068CF80 /* LaLigaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaLigaAppUITests.swift; sourceTree = "<group>"; };
-		83A909252BE29FB60068CF80 /* LaLigaAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaLigaAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		83ECDAF72BE4116400F5C0F2 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		83ECDAFA2BE4162600F5C0F2 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		83ECDAFE2BE54CD900F5C0F2 /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
+		83ECDB002BE5509800F5C0F2 /* FixturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesViewController.swift; sourceTree = "<group>"; };
+		83ECDB032BE550BA00F5C0F2 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				83A909012BE29FB30068CF80 /* LaLigaApp */,
-				83A909182BE29FB60068CF80 /* LaLigaAppTests */,
-				83A909222BE29FB60068CF80 /* LaLigaAppUITests */,
 				83A909002BE29FB30068CF80 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,6 +101,8 @@
 		83A909012BE29FB30068CF80 /* LaLigaApp */ = {
 			isa = PBXGroup;
 			children = (
+				83ECDAF92BE4161500F5C0F2 /* Network */,
+				83ECDAF62BE4113E00F5C0F2 /* Model */,
 				83A909022BE29FB30068CF80 /* AppDelegate.swift */,
 				83A909042BE29FB30068CF80 /* SceneDelegate.swift */,
 				83A909062BE29FB30068CF80 /* ViewController.swift */,
@@ -106,25 +110,27 @@
 				83A9090B2BE29FB60068CF80 /* Assets.xcassets */,
 				83A9090D2BE29FB60068CF80 /* LaunchScreen.storyboard */,
 				83A909102BE29FB60068CF80 /* Info.plist */,
+				83ECDAFE2BE54CD900F5C0F2 /* TeamViewController.swift */,
+				83ECDB002BE5509800F5C0F2 /* FixturesViewController.swift */,
+				83ECDB032BE550BA00F5C0F2 /* FavoritesViewController.swift */,
 			);
 			path = LaLigaApp;
 			sourceTree = "<group>";
 		};
-		83A909182BE29FB60068CF80 /* LaLigaAppTests */ = {
+		83ECDAF62BE4113E00F5C0F2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				83A909192BE29FB60068CF80 /* LaLigaAppTests.swift */,
+				83ECDAF72BE4116400F5C0F2 /* Team.swift */,
 			);
-			path = LaLigaAppTests;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		83A909222BE29FB60068CF80 /* LaLigaAppUITests */ = {
+		83ECDAF92BE4161500F5C0F2 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				83A909232BE29FB60068CF80 /* LaLigaAppUITests.swift */,
-				83A909252BE29FB60068CF80 /* LaLigaAppUITestsLaunchTests.swift */,
+				83ECDAFA2BE4162600F5C0F2 /* ApiClient.swift */,
 			);
-			path = LaLigaAppUITests;
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +264,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83ECDB012BE5509800F5C0F2 /* FixturesViewController.swift in Sources */,
 				83A909072BE29FB30068CF80 /* ViewController.swift in Sources */,
+				83ECDB042BE550BA00F5C0F2 /* FavoritesViewController.swift in Sources */,
+				83ECDAFF2BE54CD900F5C0F2 /* TeamViewController.swift in Sources */,
 				83A909032BE29FB30068CF80 /* AppDelegate.swift in Sources */,
+				83ECDAF82BE4116400F5C0F2 /* Team.swift in Sources */,
 				83A909052BE29FB30068CF80 /* SceneDelegate.swift in Sources */,
+				83ECDAFB2BE4162600F5C0F2 /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +279,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83A9091A2BE29FB60068CF80 /* LaLigaAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +286,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83A909262BE29FB60068CF80 /* LaLigaAppUITestsLaunchTests.swift in Sources */,
-				83A909242BE29FB60068CF80 /* LaLigaAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +450,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JNSWVZ579M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LaLigaApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -457,6 +466,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.upsa.mimo.LaLigaApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -470,6 +483,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JNSWVZ579M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LaLigaApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -485,6 +499,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.upsa.mimo.LaLigaApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

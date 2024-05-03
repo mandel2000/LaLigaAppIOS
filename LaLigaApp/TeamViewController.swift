@@ -1,13 +1,24 @@
 //
-//  ViewController.swift
+//  TeamViewController.swift
 //  LaLigaApp
 //
-//  Created by jaime on 1/5/24.
+//  Created by jaime on 3/5/24.
 //
 
+import Foundation
 import UIKit
 
-class ViewController: UIViewController{
+class TeamViewController: UIViewController, UITableViewDataSource{
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
+        return cell
+    }
+    
     
     private let teamsTableView: UITableView = {
         let tableView = UITableView()
@@ -17,6 +28,8 @@ class ViewController: UIViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        teamsTableView.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
+        teamsTableView.dataSource = self
         view.addSubview(teamsTableView)
         
         NSLayoutConstraint.activate([
@@ -25,8 +38,9 @@ class ViewController: UIViewController{
                     teamsTableView.topAnchor.constraint(equalTo: view.topAnchor),
                     teamsTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
                 ])
+        
+
     }
-
-
+    
+    
 }
-
