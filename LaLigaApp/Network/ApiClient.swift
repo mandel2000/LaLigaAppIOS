@@ -26,13 +26,10 @@ class APIClient: NSObject {
     }
     
     
-    func getTeams(completion: @escaping ([Team])->Void) {
-        //TODO: implementar peticion
-        completion([])
-    }
+
     
-    func parseTeams(from data: Data) throws -> TeamResponse {
-        return try JSONDecoder().decode(TeamResponse.self, from: data)
-        
+    func parseTeams(from data: Data) throws -> [TeamInfo] {
+        let teams = try JSONDecoder().decode(TeamsResponse.self, from: data)
+        return teams.response;
     }
 }

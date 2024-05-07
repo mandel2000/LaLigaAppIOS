@@ -13,6 +13,8 @@
 		83A9090A2BE29FB30068CF80 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 83A909092BE29FB30068CF80 /* Base */; };
 		83A9090C2BE29FB60068CF80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83A9090B2BE29FB60068CF80 /* Assets.xcassets */; };
 		83A9090F2BE29FB60068CF80 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 83A9090E2BE29FB60068CF80 /* Base */; };
+		83B0F6322BEAC838003D00F0 /* TeamsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B0F6312BEAC838003D00F0 /* TeamsResponse.swift */; };
+		83B0F6342BEAC989003D00F0 /* FixturesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B0F6332BEAC989003D00F0 /* FixturesResponse.swift */; };
 		83ECDAF82BE4116400F5C0F2 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ECDAF72BE4116400F5C0F2 /* Team.swift */; };
 		83ECDAFB2BE4162600F5C0F2 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ECDAFA2BE4162600F5C0F2 /* ApiClient.swift */; };
 		83ECDAFF2BE54CD900F5C0F2 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ECDAFE2BE54CD900F5C0F2 /* TeamViewController.swift */; };
@@ -48,6 +50,8 @@
 		83A909102BE29FB60068CF80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83A909152BE29FB60068CF80 /* LaLigaAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaLigaAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A9091F2BE29FB60068CF80 /* LaLigaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaLigaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83B0F6312BEAC838003D00F0 /* TeamsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsResponse.swift; sourceTree = "<group>"; };
+		83B0F6332BEAC989003D00F0 /* FixturesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesResponse.swift; sourceTree = "<group>"; };
 		83ECDAF72BE4116400F5C0F2 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		83ECDAFA2BE4162600F5C0F2 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		83ECDAFE2BE54CD900F5C0F2 /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				83ECDAF72BE4116400F5C0F2 /* Team.swift */,
+				83B0F6312BEAC838003D00F0 /* TeamsResponse.swift */,
+				83B0F6332BEAC989003D00F0 /* FixturesResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -266,11 +272,13 @@
 			files = (
 				83ECDB012BE5509800F5C0F2 /* FixturesViewController.swift in Sources */,
 				83A909072BE29FB30068CF80 /* ViewController.swift in Sources */,
+				83B0F6322BEAC838003D00F0 /* TeamsResponse.swift in Sources */,
 				83ECDB042BE550BA00F5C0F2 /* FavoritesViewController.swift in Sources */,
 				83ECDAFF2BE54CD900F5C0F2 /* TeamViewController.swift in Sources */,
 				83A909032BE29FB30068CF80 /* AppDelegate.swift in Sources */,
 				83ECDAF82BE4116400F5C0F2 /* Team.swift in Sources */,
 				83A909052BE29FB30068CF80 /* SceneDelegate.swift in Sources */,
+				83B0F6342BEAC989003D00F0 /* FixturesResponse.swift in Sources */,
 				83ECDAFB2BE4162600F5C0F2 /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
